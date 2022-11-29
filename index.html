@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="overlay hide">
+  </div>
   <section class="library">
     <article class="book">
       <h2 class="title">Book Title</h2>
@@ -31,6 +33,27 @@
   </section>
 
   <button class="addBook">Add Book</button>
+
+  <div class="pop-up hide">
+    <form>
+      <label for="title">Book Title
+      <input id="title" type="text">
+    </label>
+      <label for="author">Author Name
+        <input id="author" type="text">
+      </label>
+      <label for="pages">Page Number
+        <input type="number" id="pages">
+      </label>
+      <label for="red">Have you read the book?
+        <select name="read" id="read">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+          </select>
+      </label>
+      <button type="submit">Add</button>
+    </form>
+  </div>
   
 </body>
 </html>

@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/images/pexels-photo-6498990.jpeg');
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 50px;
+  text-align: center;
+}
+
+.library {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  gap: 50px;
+}
+
+article {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.title, .author, .pages, .read {
+  margin: 20px 0;
+}
+
+.addBook {
+  font-size: 24px;
+  padding: 15px 30px;
+  border-radius: 20px;
+  margin: 40px 0;
+}
+
+.pop-up {
+  text-align: center;
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+form {
+  margin: auto;
+}
+
+form label, form input, form select {
+  display: block;
+  margin: auto;
+}
+
+form label {
+  margin: 20px auto;
+}
+
+form button {
+  font-size: 20px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.overlay {
+  background-color: black;
+  opacity: 70%;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hide {
+  display: none;
+}
